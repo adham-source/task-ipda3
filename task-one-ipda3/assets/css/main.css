@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+/*Start global CSS*/
+:root {
+    --main-color: rgba(58, 173, 230, 1);
+    --sec-color: rgba(35, 49, 66, 1);
+    --main-font: 'Cairo', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+section {
+    color: var(--sec-color);
+}
+
+.bottom-line {
+    background: #fff;
+    position: relative;
+}
+
+.bottom-line::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 5rem;
+    background: var(--main-color);
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+
+/*End global CSS*/
+
+/*!--Start navbar--*/
+.navbar-brand img {
+    height: 3rem;   
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(58, 173, 230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+.navbar-collapse .navbar-nav {
+    border-top: 1px solid var(--main-color);
+    text-align: left;
+}
+
+.navbar-nav .nav-link {
+    color: var(--main-color) !important;
+}
+
+.dropdown-menu {
+    text-align: left;
+}
+
+.dropdown-item {
+    color: var(--main-color) !important;
+}
+/*!--End navbar--*/
+
+/*!--Start slogan--*/
+.slogan-info .row {
+    padding-top: 3rem;
+}
+
+.slogan-info .slogan-left {
+    background: url(../images/header-side.jpg) no-repeat left top;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+}
+
+.slogan-info .slogan-left h1 {
+    line-height: 1.7;
+}
+/*!--End slogan--*/
+
+/*!--Start our-info--*/
+.our-info p {
+    line-height: 1.7;
+    font-size: 1.4rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+/*!--End our-info--*/
+
+/*!--Start our-offers--*/
+.our-offers {
+    background: url(../images/we-offer.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/*!--End our-offers--*/
+
+/*!--Start some-works--*/
+.some-works {
+    width: 100%;
+    background: url(../images/bg30-Ar1web.gif);
+    text-align: center;
+}
+
+.some-works-item {
+    max-width: 100%;
+    border-radius: 1rem;
+    background: #fff;
+    margin: 2rem auto 1rem;
+    box-shadow: 0 0 .5rem .1rem rgba(35, 49, 66, .3);
+}
+
+.some-works-image img {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+}
+
+.some-works-text {
+    font-weight: 100;
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+/*!--End some-works--*/
+
+/*!--Start some-info--*/
+.some-info {
+    text-align: center;
+}
+
+.read-more {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25%;
+}
+
+.read-more a {
+    padding: .4rem 1rem;
+}
+
+.read-more i {
+    margin: auto;
+}
+
+.read-more span {
+    padding-left: .3rem;
+    color: rgba(0,0,0,.3);
+    font-weight: 100;
+}
+/*!--Start some-info--*/
+
+/*!--Start our-customers--*/
+.our-customers {
+    background: url(../images/our-client-bg.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+/*!--End our-customers--*/
+
+/*!--Start footer--*/
+footer {
+    background: url(../images/footer.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-img-right {
+    height: 25rem;
+    padding: 1.5rem;
+}
+
+.footer-img-right img {
+    max-height: 100%;
+}
+
+.footer-content {
+    width: 90%
+}
+
+.footer-brand img {
+    height: 6rem; 
+}
+
+.footer-content .address {
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+}
+
+.footer-content .social-icons {
+    padding: 0 1rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-content .social-icons a {
+    font-size: 1.6rem;
+}
+
+/*!--Start footer--*/
+
+/*My framework*/
+.mr-top {
+    margin-top: 5rem;
+}
+
+.my-btn {
+    display: inline-flex;
+    background: var(--sec-color);
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 1.5rem;
+    padding: .4rem 3.5rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 .5rem .1rem rgba(35, 49, 66, .3);
+}
+/*My framework*/
