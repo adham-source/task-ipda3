@@ -1,0 +1,53 @@
+// Start function Owl carousel
+$(document).ready(function(){
+    $(".container-offers").owlCarousel({
+        loop:true,
+        rtl:true,
+        dots:false,
+        margin:30,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                autoplay:true
+            },
+            600:{
+                items:2,
+                nav:true,
+            },
+            1000:{
+                items:3,
+                nav:false,
+                loop:true
+            }
+        }
+    });
+});
+
+$(document).ready(function(){
+    $(".customers").owlCarousel({
+        loop:true,
+        rtl:true,
+        dots:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:false,
+                autoplay:true
+            },
+            600:{
+                items:3,
+                nav:true,
+                margin:60
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:true,
+                margin:100
+            }
+        }
+    });
+});
