@@ -114,7 +114,7 @@ a {
 .our-offers {
     background: url(../images/we-offer.png) no-repeat;
     background-size: cover;
-    height: calc(100vh + 8rem);
+    height: 100vh;
 }
 
 .container-offers {
