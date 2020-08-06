@@ -71,7 +71,7 @@ a {
 }
 
 .navbar-nav .nav-link {
-    color: var(--main-color) !important;
+    color: var(--sec-color) !important;
 }
 
 .dropdown-menu {
@@ -79,7 +79,7 @@ a {
 }
 
 .dropdown-item {
-    color: var(--main-color) !important;
+    color: var(--sec-color) !important;
 }
 /*!--End navbar--*/
 
