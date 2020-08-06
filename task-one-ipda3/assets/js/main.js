@@ -3,22 +3,21 @@ $(document).ready(function(){
     $(".container-offers").owlCarousel({
         loop:true,
         rtl:true,
+        nav:true,
         dots:false,
         margin:30,
         responsiveClass:true,
         responsive:{
             0:{
                 items:1,
-                nav:false,
-                autoplay:true
+                //nav:false,
+                //autoplay:true
             },
             600:{
                 items:2,
-                nav:true,
             },
             1000:{
                 items:3,
-                nav:false,
                 loop:true
             }
         }

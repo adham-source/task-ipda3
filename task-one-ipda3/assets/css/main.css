@@ -37,7 +37,7 @@ section {
 
 h2 {
     text-align: center;
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
 }
 
 a {
@@ -84,19 +84,16 @@ a {
 /*!--End navbar--*/
 
 /*!--Start slogan--*/
-.slogan-info .row {
-    padding-top: 3rem;
-}
-
 .slogan-info .slogan-left {
     background: url(../images/header-side.jpg) no-repeat left top;
-    background-size: cover;
+    background-size: contain;
     display: grid;
     place-items: center;
     padding-top: 1rem;
 }
 
 .slogan-info .slogan-left h1 {
+    width: 85%;
     line-height: 1.7;
 }
 /*!--End slogan--*/
@@ -114,28 +111,26 @@ a {
 .our-offers {
     background: url(../images/we-offer.png) no-repeat;
     background-size: cover;
-    height: 100vh;
+    
 }
 
 .container-offers {
+    display: inline-block !important;
     text-align: center;
-    height: 100vh;
-    max-width: 100%;
-    padding-top: 2%;
+    padding: 2% 0 3% 0;
 }
 
 .content-offer {
-    max-width: 100%;
     display: grid;
     place-items: center;
     border-radius: 1rem;
+    border: 1px solid #ddd;
     background: #fff;
-    box-shadow: 0 0 .1rem .1rem rgba(35, 49, 66, .3);
 }
 
 .img-offer {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
     padding-top: 1rem;
 }
@@ -146,16 +141,13 @@ a {
 }
 
 .content-offer p {
-    padding-top: 0;
+    padding: 0 1rem;
     direction: ltr;
     font-weight: 500;
     font-size: 1.1rem;
     color: var(--sec-color);
 }
 
-.container-offers .owl-nav {
-    display: block !important
-}
 
 .container-offers .owl-nav button {
     font-size: 2.5rem !important;
