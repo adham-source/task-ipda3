@@ -3,6 +3,7 @@
 :root {
     --main-color: rgba(58, 173, 230, 1);
     --sec-color: rgba(35, 49, 66, 1);
+    --third-color: rgba(0, 123, 255, 1); 
     --main-font: 'Cairo', sans-serif;
 }
 
@@ -32,22 +33,6 @@ section {
     transform: translateX(-50%);
     height: 2px;
     width: 5rem;
-    background: var(--main-color);
-}
-
-.right-line {
-    text-align: right;
-    padding: 2rem 0 3rem 0;
-    position: relative;
-}
-
-.right-line::after {
-    content: '';
-    position: absolute;
-    top: 43%;
-    right: -1.5rem;
-    height: 2.7rem;
-    width: 4.5px;
     background: var(--main-color);
 }
 
@@ -88,6 +73,10 @@ a {
 
 .navbar-nav .nav-link {
     color: var(--sec-color) !important;
+}
+
+.navbar-nav .nav-link:focus {
+    outline: none !important;
 }
 
 .dropdown-menu {
@@ -200,8 +189,8 @@ a {
 }
 /*!--End some-works--*/
 
-/*!--Start some-info--*/
-.some-info {
+/*!--Start article--*/
+.article {
     text-align: center;
 }
 
@@ -224,7 +213,7 @@ a {
     color: rgba(0,0,0,.3);
     font-weight: 100;
 }
-/*!--Start some-info--*/
+/*!--Start article--*/
 
 /*!--Start our-customers--*/
 .our-customers {
