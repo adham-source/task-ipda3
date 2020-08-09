@@ -45,8 +45,22 @@ $(document).ready(function(){
                 items:4,
                 nav:true,
                 loop:true,
-                margin:100
+                margin:10
             }
         }
+    });
+});
+
+// Start change active on the number btn
+const listNumPage = document.querySelector('.list-next-page');
+const btnSpanList = document.querySelectorAll('.list-next-page .number');
+
+btnSpanList.forEach(span => {
+    //console.log(span);
+    span.addEventListener('click', () => {
+        btnSpanList.forEach(span => {
+            span.classList.remove('active');
+        });
+        span.classList.add('active');
     });
 });

@@ -1,0 +1,45 @@
+/*Start global*/
+.right-line {
+    margin: .5rem .5rem 1rem;
+    padding-right: 1rem;
+    text-align: right;
+    position: relative;
+}
+
+.right-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 2rem;
+    width: 4.5px;
+    background: var(--main-color);
+}
+/*Start global*/
+
+/*!--Start app-one--*/
+.main-img {
+   padding: 1rem 20%;
+}
+
+.main-img img {
+    padding: 5%;
+}
+
+/*!--End app-one--*/
+
+/*!--Start project-details--*/
+.project-details .bg-details {
+    background: url(../images/details-bg.png);
+}
+
+.project-details p {
+    color: #fff;
+    font-size: 1.3rem;
+}
+/*!--End project-details--*/
+
+/*!--Start show-app--*/
+
+/*!--End show-app--*/
