@@ -1,9 +1,9 @@
 /*!--Start some-works--*/
 .some-works {
-    padding-top: 12rem;
+    padding-top: 2rem;
 }
 
-.some-works .right-line {
+/*.some-works .right-line {
     margin: 1rem 0;
     top: 5.5rem;
     right: 3rem;
@@ -16,6 +16,24 @@
     top: 5%;
     right: -1.5rem;
     height: 2.7rem;
+    width: 4.5px;
+    background: var(--main-color);
+}*/
+
+.some-works .right-line {
+    margin: .5rem 1.5rem 3rem;
+    padding-right: 1rem;
+    text-align: right;
+    position: relative;
+}
+
+.some-works .right-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 2rem;
     width: 4.5px;
     background: var(--main-color);
 }
