@@ -51,7 +51,7 @@ $(document).ready(function(){
     });
 });
 
-// Start change active on the number btn
+// Start change active on the number btn pagination
 const listNumPage = document.querySelector('.list-next-page');
 const btnSpanList = document.querySelectorAll('.list-next-page .number');
 

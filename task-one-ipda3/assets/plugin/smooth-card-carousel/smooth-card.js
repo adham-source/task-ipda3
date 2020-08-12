@@ -15,7 +15,7 @@ if ($num % 2 == 0) {
 
 $('.my-card').click(function() {
   $slide = $('.active').width();
-  console.log($('.active').position().left);
+  // console.log($('.active').position().left);
   
   if ($(this).hasClass('next')) {
     $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
